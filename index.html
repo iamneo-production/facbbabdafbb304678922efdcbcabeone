@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="box-container">
+        <div class="row">
+            <button class="btn" onclick="makeMove(this)"></button>
+            <button class="btn" onclick="makeMove(this)"></button>
+            <button class="btn" onclick="makeMove(this)"></button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="makeMove(this)"></button>
+            <button class="btn" onclick="makeMove(this)"></button>
+            <button class="btn" onclick="makeMove(this)"></button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="makeMove(this)"></button>
+            <button class="btn" onclick="makeMove(this)"></button>
+            <button class="btn" onclick="makeMove(this)"></button>
+        </div>
+    </div>
+    <div class="result-container">
+        <p id="result">Player X's Turn</p>
+    </div>
+    <div class="reset">
+        <button id="resetBtn" onclick="resetGame()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
