@@ -1,14 +1,12 @@
-body {
-    text-align: center;
-}
-
+/* Header Styling */
 h1 {
-    color: white;
     text-align: center;
+    color: white;
     text-shadow: 2px 2px 4px #888;
     font-size: 50px;
 }
 
+/* Box Styling */
 .box-container {
     display: flex;
     flex-direction: column;
@@ -22,6 +20,7 @@ h1 {
     align-items: center;
 }
 
+/* Button Styling */
 .btn {
     width: 75px;
     height: 75px;
@@ -43,6 +42,7 @@ h1 {
     cursor: not-allowed;
 }
 
+/* Result Container Styling */
 .result-container {
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #000;
@@ -57,10 +57,12 @@ h1 {
     font-size: 25px;
 }
 
+/* Reset Styling */
 .reset {
     text-align: center;
 }
 
+/* Reset Button Styling */
 #resetBtn {
     border: 2px solid #000;
     color: black;
@@ -72,5 +74,5 @@ h1 {
 
 #resetBtn:hover {
     background-color: black;
-    color: white;
+    color: white;
 }

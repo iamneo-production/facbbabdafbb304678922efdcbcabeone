@@ -6,12 +6,12 @@ let gameWon = false;
 // Function to handle a player's move.
 function makeMove(button) {
     const index = parseInt(button.id);
-
+    
     // Check if the cell is empty and the game is not over.
     if (!gameBoard[index] && !gameWon) {
         gameBoard[index] = currentPlayer;
         button.innerText = currentPlayer;
-
+        
         // Check for a win after every move.
         if (checkWin()) {
             document.getElementById('result').innerText = `Player ${currentPlayer} wins!`;
@@ -33,14 +33,14 @@ function checkWin() {
         [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
         [0, 4, 8], [2, 4, 6]              // Diagonals
     ];
-
+    
     for (const condition of winConditions) {
         const [a, b, c] = condition;
         if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
             return true;
         }
     }
-
+    
     return false;
 }
 
@@ -58,7 +58,7 @@ function resetGame() {
 
 // Add event listeners to buttons.
 document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function() {
         makeMove(this);
         this.disabled = true;
     });
